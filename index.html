@@ -4,33 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
     <title>BMI Calculator</title>
 </head>
 <body>
 
     <div class="container">
+
         <h1 id="title">BMI Calculator</h1>
 
         <label for="gender">Gender</label>
-        <select name="Gender" id="gender">
-            <option value="Male">Male</option>
+        <select name="Gender" id="InGen">
+            <option value="Male" >Male</option>
             <option value="Female">Female</option>
         </select>
 
         <label for="age">Age</label>
-        <input type="text" placeholder="Add your age" id="age">
+        <div class="input-container">
+            <div></div>
+            <input type="number" placeholder="Add your age" id="InAge">
+            <p class="error" id="errorAge"></p>
+        </div>
 
         <label for="height">Height</label>
-        <input type="text" placeholder="Meter" id="meter">
-        <input type="text" placeholder="Cm" id="cm">
+        <div class="input-container">
+            <div></div>
+            <input type="number" placeholder="Meter" id="InM">
+            <p class="error" id="errorMeter"></p>
+        </div>
+        <div class="input-container">
+            <p class="error"></p>
+            <input type="number" placeholder="Cm" id="InCm">
+            <p class="error" id="errorCm"></p>
+        </div>
 
-        <label for="weight">weight</label>
-        <input type="text" placeholder="Your weight" id="weigh  t">
-
+        <label for="weight">Weight</label>
+        <div class="input-container">
+            <div></div>
+            <input type="number" placeholder="Your weight" id="InWeight">
+            <p class="error" id="errorWeight"></p>
+        </div>
+        
         <button id="myBtn" onclick="Calculator()">Submit</button>
 
-
     </div>
+
+    <div class="container1">
+        <h2>Result</h2>
+        <label for="Result">Here's your Result</label>
+
+        <div class="container2">
+
+            <h2 id="ResNo"></h2>
+            <p id="para">Your Result will be here...</p>
+        </div>
+    </div>  
 
 
     <script src="script.js"></script>
