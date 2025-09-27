@@ -57,4 +57,34 @@ function Calculator() {
         + "<b>Risks :</b> weak immune system, osteoporosis, constant fatigue.<br>";
     }
 
+    if ((ResNo >= 18.5) && (ResNo < 24.9)) {
+        document.getElementById("para").innerHTML = "This is the healthy range.<br><br>"
+        + "<b>Possible causes :</b> Lowest risk for heart disease, diabetes, and hypertension.<br><br>"
+        + "<b>Risks :</b> Still requires a healthy lifestyle (balanced diet + regular exercise).<br>";
+    }
+
+    if ((ResNo >= 24.9  ) && (ResNo < 29.9)) {
+        document.getElementById("para").innerHTML = "Weight is above normal, but not yet obesity.<br><br>"
+        + "<b>Possible causes :</b> Can usually return to normal range with diet and exercise adjustments.<br><br>"
+        + "<b>Risks :</b> higher chance of high blood pressure, insulin resistance, and early metabolic issues.<br>";
+    }
+
+    if ((ResNo >= 29.9  ) && (ResNo < 34.9)) {
+        document.getElementById("para").innerHTML = "First level of obesity.<br><br>"
+        + "<b>Possible causes :</b> Lifestyle changes are crucial; medical supervision is recommended.<br><br>"
+        + "<b>Risks :</b> Higher risk of type 2 diabetes, high blood pressure, and cardiovascular diseases.<br>";
+    }
+
+    if ((ResNo >= 34.9  ) && (ResNo <= 39.9)) {
+        document.getElementById("para").innerHTML = "More severe obesity.<br><br>"
+        + "<b>Possible causes :</b> Medical follow-up becomes very important.<br><br>"
+        + "<b>Risks :</b> Stronger risk of chronic diseases and Symptoms like shortness of breath and fatigue.<br>";
+    }
+
+    if ((ResNo >= 40 )) {
+        document.getElementById("para").innerHTML = "Very serious stage.<br><br>"
+        + "<b>Possible causes :</b> Often requires medical interventions (medications or bariatric surgery).<br><br>"
+        + "<b>Risks :</b> Extremely high risks for heart disease, liver problems, joint damage, and breathing issues.<br>";
+    }
+
 }

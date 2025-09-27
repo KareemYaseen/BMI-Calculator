@@ -61,16 +61,20 @@ body {
     width: 100%;
 }
 
+.res-container {
+    width: 90%;
+}
+
 
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 55px;
     margin-bottom: 20px;
     margin-top: 5px;
 }
 
 h2 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 35px;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -83,7 +87,7 @@ h2 {
 
 #para {
     font-size: 20px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 .error {
@@ -107,7 +111,7 @@ label{
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 22px;
-    font-family: bold 'Times New Roman';
+    font-family: 'Roboto', sans-serif;
     background-color: #541212;
     width: 100%;
     color:whitesmoke;
